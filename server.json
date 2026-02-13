@@ -1,0 +1,23 @@
+{
+  "name": "io.github.workclear-au/workclear-mcp",
+  "description": "Australian contractor licence verification across 7 states — 1.3M+ records from official government registers",
+  "artifacts": [
+    {
+      "registryType": "npm",
+      "identifier": "@workclear/mcp-server",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your WorkClear API key (get one free at https://workclear.com.au/signup)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "WORKCLEAR_API_KEY"
+        }
+      ]
+    }
+  ]
+}

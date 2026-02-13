@@ -1,0 +1,48 @@
+{
+  "name": "@workclear/mcp-server",
+  "version": "1.0.1",
+  "mcpName": "io.github.workclear-au/workclear-mcp",
+  "description": "MCP server for Australian contractor licence verification via WorkClear API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "workclear-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "licence-verification",
+    "australia",
+    "contractor",
+    "workclear"
+  ],
+  "author": "WorkClear",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workclear-au/workclear-mcp.git"
+  },
+  "homepage": "https://workclear.com.au",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

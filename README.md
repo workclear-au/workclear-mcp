@@ -4,6 +4,12 @@ MCP (Model Context Protocol) server for Australian contractor licence verificati
 
 Verify contractor licences across QLD, NSW, VIC, SA, ACT, and NT directly from AI agents like Claude, ChatGPT, or any MCP-compatible client.
 
+> **Project status: hibernating since 22 September 2026.** Existing npm version
+> `1.0.2` remains available, but this adapter has no active feature or release
+> roadmap. WorkClear's supported integration surface is the
+> [REST API and OpenAPI contract](https://www.workclear.com.au/docs). See
+> [STATUS.md](STATUS.md) for the reactivation policy.
+
 ## Quick Start
 
 ### 1. Get an API key
@@ -109,16 +115,12 @@ npm run build
 WORKCLEAR_API_KEY=your_key npm run dev
 ```
 
-## Publishing
+## Reactivation
 
-```bash
-# Bump version
-npm version patch   # 1.0.0 → 1.0.1
-
-# Build and publish
-npm run build
-npm publish --access public
-```
+This repository is retained as the public source attached to npm `1.0.2` and is
+archived while the package is hibernating. Do not publish a new version without
+a confirmed demand signal, current protocol/API review, security validation and
+a reviewed token-free release workflow.
 
 ## License
 
